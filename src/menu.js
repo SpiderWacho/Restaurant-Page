@@ -35,25 +35,28 @@ function appendMenu() {
 
     const pastaText = document.createElement("p")
     pastaText.textContent = "Our famous black pasta, with sea weed"
-    pastaText.classList.add("pastaTxt")
+    pastaText.classList.add("menuTxt");
+    pastaText.id = "pastaTxt"
 
     const tacosImg = new Image();
     tacosImg.src = tacos;
     tacosImg.classList.add("menu-img");
-    tacosImg.id = "tacosImg"
+    tacosImg.id = "tacosImg";
 
-    const tacosText = document.createElement("p")
-    tacosText.textContent = "We have an option for the meat enjoyers, our tacos with differents topping, make it on your own style"
-    tacosText.classList.add("tacosTxt")
+    const tacosText = document.createElement("p");
+    tacosText.textContent = "We have an option for the meat enjoyers, our tacos with differents topping, make it on your own style";
+    tacosText.classList.add("menuTxt");
+    tacosText.id = "tacosTxt";
 
     const sushiImg = new Image();
     sushiImg.src = sushi;
     sushiImg.classList.add("menu-img");
-    sushiImg.id = "sushiImg"
+    sushiImg.id = "sushiImg";
 
-    const sushiText = document.createElement("p")
-    sushiText.textContent = "Our sushi rolls crafted by the most skilled sushi-man of don torcuato"
-    sushiText.classList.add("sushiTxt")
+    const sushiText = document.createElement("p");
+    sushiText.textContent = "Our sushi rolls crafted by the most skilled sushi-man of don torcuato";
+    sushiText.classList.add("menuTxt");
+    sushiText.id = "sushiTxt";
     
     cardContent.append(pastaImg, pastaText, tacosImg, tacosText, sushiImg, sushiText);
     

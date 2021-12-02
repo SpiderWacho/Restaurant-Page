@@ -53,13 +53,18 @@ function appendContact() {
     labelMessage.htmlFor = message;
     labelMessage.textContent="Message";
 
+    const submitDiv = document.createElement("div");
+    submitDiv.classList.add("submitDiv");
+    
+
     const submitBtn = document.createElement("input")
     submitBtn.setAttribute("type","submit");
-    submitBtn.id = "name"
+    submitBtn.id = "submit"
     submitBtn.classList.add("contactField");
     submitBtn.value  = "Submit"
+    submitDiv.append(submitBtn);
 
-    contactForm.append(labelName, name, labelEmail, email, labelMessage, message, submitBtn);
+    contactForm.append(labelName, name, labelEmail, email, labelMessage, message, submitDiv);
     
 
   
